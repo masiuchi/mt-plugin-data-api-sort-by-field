@@ -1,0 +1,13 @@
+name: DataAPISortByField
+version: 0.01
+description: <__trans phrase="Enable to sort data by custom field. (sortBy=field:???)">
+plugin_link: https://github.com/masiuchi/mt-plugin-data-api-sort-by-field
+
+author_name: Masahiro Iuchi
+author_link: https://github.com/masiuchi
+
+applications:
+  data_api:
+    callbacks:
+      data_api_pre_load_filtered_list: $DataAPISortByField::MT::Plugin::DataAPISortByField::callback
+
